@@ -3,7 +3,12 @@ Output random 0 and 1 or custom characters in matrix style
 # screenshot
 ![](images/1.png)
 # Installation
-
+## Arch 
+rmini-matrix is in the AUR
+```bash
+yay -S rmini-matrix
+```
+## Other distros 
 clone github repo
 ```bash
 git clone https://github.com/SkwalExe/rmini-matrix
