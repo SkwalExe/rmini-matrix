@@ -9,6 +9,14 @@ const RESET: &str = "\x1b[0m";
 const BG_RED: &str = "\x1b[41m";
 const BG_MAGENTA: &str = "\x1b[45m";
 
+// arguments :
+// - n_chars : number of characters
+// - custom_chars : string to choose random characters from
+//
+// this function will :
+//
+// - generate a random string with chars from custom_chars of length n_chars
+// - print the string
 fn matrix(n_chars: &usize, custom_chars: &String) {
     let mut line = String::new();
 
@@ -21,15 +29,15 @@ fn matrix(n_chars: &usize, custom_chars: &String) {
 }
 
 fn main() {
-    let mut command = "matrix";
-    let mut repeat = false;
-    let mut n_chars = 10;
-    let mut speed = 0.5;
-    let mut custom_chars = String::from("01");
+    let mut command = "matrix"; // command to execute (matrix, help, version)
+    let mut repeat = false; // should the program output lines repeatedly?
+    let mut n_chars = 10; // number of chars per line
+    let mut speed = 0.5; // delay between each lines
+    let mut custom_chars = String::from("01"); // chars to be used
 
-    let mut args: Vec<String> = std::env::args().collect();
+    let mut args: Vec<String> = std::env::args().collect(); // command lines args
 
-    args.remove(0);
+    args.remove(0); // remove the name of the program from args
 
     while args.len() > 0 {
         match args[0].as_str() {
@@ -43,9 +51,13 @@ fn main() {
             }
             "-s" | "--speed" => {
                 if args.len() > 1 {
+                    // if one argument is provided after the flag
+
                     speed = match args[1].parse::<f32>() {
+                        // try to parse the argument as a float
                         Ok(n) => n,
                         Err(_) => {
+                            // if the argument is not a float, print an error message and exit
                             println!(
                                 "{}[ x ] : Invalid argument after {} : {}{} {} {}",
                                 RED, args[0], WHITE, BG_RED, args[1], RESET
@@ -69,6 +81,7 @@ fn main() {
             }
             "-a" | "--custom-chars" => {
                 if args.len() > 1 {
+                    // if one argument is provided after the flag
                     custom_chars = args.remove(1);
                     args.remove(0);
                 } else {
@@ -81,9 +94,12 @@ fn main() {
             }
             "-c" | "--chars" => {
                 if args.len() > 1 {
+                    // if one argument is provided after the flag
                     n_chars = match args[1].parse::<usize>() {
+                        // it should be a number
                         Ok(n) => n,
                         Err(_) => {
+                            // if the argument is not a number, print an error message and exit
                             println!(
                                 "{}[ x ] : Invalid argument after {} : {}{} {} {}",
                                 RED, args[0], WHITE, BG_RED, args[1], RESET
