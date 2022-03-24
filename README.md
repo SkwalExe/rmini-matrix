@@ -18,6 +18,17 @@ yay -S rmini-matrix
 
 ## Other distros 
 
+### With make
+
+Run make
+
+```bash
+# 📂 rmini-matrix/
+make
+```
+
+### Or
+
 clone github repo
 
 ```bash
@@ -58,6 +69,25 @@ tail = true
 ```
 
 ![](images/screenshot.gif)
+
+# Uninstall 🗑
+
+## With make
+
+Run make uninstall
+
+```bash
+# 📂 rmini-matrix/
+make uninstall
+```
+
+## Or
+
+Just remove the binary
+
+```bash
+sudo rm /usr/bin/rmini-matrix
+```
 
 # final
 
