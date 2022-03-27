@@ -89,6 +89,21 @@ Just remove the binary
 sudo rm /usr/bin/rmini-matrix
 ```
 
+# Docker 🐳
+
+### Build 🛠️
+
+```bash
+# 📂 rmini-matrix/
+docker build -t rmini-matrix .
+```
+
+### Run 🏃
+
+```bash
+docker run --rm -it rmini-matrix [OPTIONS]
+```
+
 # final
 
 If you have any probleme, don't hesitate to open an issue
