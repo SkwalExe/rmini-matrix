@@ -46,7 +46,7 @@ cargo build --release
 
 ```bash
 # 📂 rmini-matrix/
-sudo cp target/release/lsd-print /usr/bin/lsd-print
+sudo cp target/release/rmini-matrix /usr/bin/rmini-matrix
 ```
 
 **On windows** the executable will be `target\release\rmini-matrix.exe` you can move it wherever you want.
