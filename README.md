@@ -6,9 +6,9 @@
 
 👨‍💻 Output random 0 and 1 or custom characters with a matrix-like effect
 
-# Installation
+# Installation 📦
 
-## Arch 
+## Arch Linux 🐧
 
 rmini-matrix is in the AUR
 
@@ -16,9 +16,9 @@ rmini-matrix is in the AUR
 yay -S rmini-matrix
 ```
 
-## Other distros 
+## Other 🪟🐧
 
-### With make
+### With make - Linux 🐧
 
 Run make
 
@@ -27,7 +27,7 @@ Run make
 make
 ```
 
-### Or
+### Build from source - Linux 🐧 & Windows 🪟
 
 clone github repo
 
@@ -42,12 +42,14 @@ build with [cargo](https://doc.rust-lang.org/cargo/getting-started/installation.
 cargo build --release
 ```
 
-Move the binary
+**[ LINUX ONLY ] :** Move the binary
 
 ```bash
 # 📂 rmini-matrix/
 sudo cp target/release/lsd-print /usr/bin/lsd-print
 ```
+
+**On windows** the executable will be `target\release\lsd-print.exe` you can move it wherever you want.
 
 # Usage 
 
