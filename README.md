@@ -49,7 +49,7 @@ cargo build --release
 sudo cp target/release/lsd-print /usr/bin/lsd-print
 ```
 
-**On windows** the executable will be `target\release\lsd-print.exe` you can move it wherever you want.
+**On windows** the executable will be `target\release\rmini-matrix.exe` you can move it wherever you want.
 
 # Usage 
 
