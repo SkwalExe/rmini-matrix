@@ -93,6 +93,14 @@ sudo rm /usr/bin/rmini-matrix
 
 # Docker 🐳
 
+## Run the latest version
+
+```bash
+docker run --rm -it ghcr.io/skwalexe/rmini-matrix:main
+```
+
+## Test your changes 🚧
+
 ### Build 🛠️
 
 ```bash
