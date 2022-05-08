@@ -2,6 +2,16 @@
 name = "rmini-matrix"
 version = "0.1.0"
 edition = "2021"
+author = ["Léopold Koprivnik Ibghy, @SkwalExe <skwal.net@gmail.com>"]
+description = "Rust implementation of mini-matrix - much faster - Output random 0 and 1 or custom characters with a matrix-like effect"
+documentation = "https://github.com/SkwalExe/rmini-matrix#readme"
+readme = "https://github.com/SkwalExe/rmini-matrix#readme"
+homepage = "https://github.com/SkwalExe/rmini-matrix"
+repository = "https://github.com/SkwalExe/rmini-matrix"
+license = "MIT"
+license-file = "LICENSE"
+keywords = ["linux", "rust", "cli", "fun", "hack", "matrix", "polybar", "mini-matrix", "skwalexe"]
+publish = false
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
